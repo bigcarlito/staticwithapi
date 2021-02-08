@@ -21,7 +21,8 @@ namespace Company.Function
             [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = null)] HttpRequest req,
             ILogger log)
         {
-            var cartInfo = new CartInfo() { CartID = "asfd-sfda-saf-sfd" };
+            string responseMessage = "";
+            CartInfo cartInfo = new CartInfo() { CartID = "asfd-sfda-saf-sfd" };
             return new JsonResult(cartInfo);
         }
     }
