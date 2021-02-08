@@ -9,7 +9,7 @@
   <script>
     $(document).ready(function() {
       $.getJSON("/api/GetCartInfo", function(data) { 
-        $("#result").text(data); 
+        $("#result").text(data.CartID); 
       });
     });
   </script>  
