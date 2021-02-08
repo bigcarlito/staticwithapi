@@ -11,7 +11,7 @@ using Newtonsoft.Json;
 namespace Company.Function
 {
     public class CartInfo{
-        public string CartID;
+        public string cartID;
     }
 
     public static class GetCartInfo
@@ -22,7 +22,7 @@ namespace Company.Function
             ILogger log)
         {
             string responseMessage = "";
-            CartInfo cartInfo = new CartInfo() { CartID = "asfd-sfda-saf-sfd" };
+            CartInfo cartInfo = new CartInfo() { cartID = "asfd-sfda-saf-sfd" };
             return new JsonResult(cartInfo);
         }
     }
